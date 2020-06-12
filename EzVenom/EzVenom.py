@@ -71,7 +71,7 @@ def main():
         os.system(payload)
         
     else:
-        print("Wrong shell type requested.. :c")
+        print("Invalid Shell Type Requested.. :c")
         print()
         usage()
         sys.exit()
