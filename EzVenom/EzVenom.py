@@ -16,6 +16,7 @@ def usage():
     print(" * wemwrs : Windows Encoded Meterpreter Windows Reverse Shell")
     print(" * asp : ASP Meterpreter Reverse TCP")
     print(" * jsp : JSP Java Meterpreter Reverse TCP")
+    print(" * war : It's WAR Time")
     print()
     print("# Example: python3 EzVenom.py 127.0.0.1 1234 lbms")
 
