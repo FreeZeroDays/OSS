@@ -1,7 +1,6 @@
 #!/bin/bash
 # Just a simple script to clean up and make life a little easier :) 
-# I will use this on client machines if I do not believe that they will decommission it after the penetration test. 
-
+# I  use this on client machines to ensure that if it is not decommissioned after the penetration test that evidence is minimal.
 echo "" > /root/.bash_history
 echo "" > ~/.bash_history
 
