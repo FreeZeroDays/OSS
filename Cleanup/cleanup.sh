@@ -22,3 +22,4 @@ rm -r ~/.hashcat/sessions
 
 rm -r /opt/tools
 rm -r /tmp/tmp
+rm -rf /opt/nessus
