@@ -1,5 +1,4 @@
-REM Ducky Script for opening 'fastest shell in the west' via ducky script. Fast shell, nothing else :D
-REM Author: Nautilus
+REM Author: Deviant
 DELAY 2000
 GUI r
 DELAY 1000
