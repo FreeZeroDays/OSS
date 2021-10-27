@@ -36,3 +36,7 @@ rm -rf /root/evidence
 rm -rf ~/evidence
 rm -rf /root/.cme
 rm -rf ~/.cme
+
+# Kill all active sessions so we don't leak data
+tmux kill-server
+pkill screen
