@@ -2,9 +2,11 @@
 # Just a simple script to clean up and make life a little easier :D
 # Author: Deviant
 
-# Delete bash history
+# Delete history
 echo "" > /root/.bash_history
 echo "" > ~/.bash_history
+echo "" > /root/.zsh_history
+echo "" ~/.zsh_history
 
 # Delete Metasploit l00ts
 echo "" > /root/.msf4/history
