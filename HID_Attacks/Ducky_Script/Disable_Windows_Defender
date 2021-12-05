@@ -1,6 +1,6 @@
 REM Disable Windows Defender with Powershell
 REM Feels a little slow - play around with delay to increase speed (also depends on computer being ran on)
-REM Author: Deviant 
+REM Author: Parzival 
 DELAY 1000
 GUI r
 DELAY 1000
