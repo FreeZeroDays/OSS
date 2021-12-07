@@ -1,6 +1,6 @@
 #!/bin/bash
 # Just a simple script to clean up and make life a little easier :D
-# Author: Deviant
+# Author: Parzival
 
 # Delete history
 echo "" > /root/.bash_history
@@ -42,3 +42,6 @@ rm -rf ~/.cme
 # Kill all active sessions so we don't leak data
 tmux kill-server
 pkill screen
+
+# Kill Metasploit Workspaces
+msfconsole -q -x 'workspace -D'
