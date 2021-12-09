@@ -1,5 +1,5 @@
 provider "digitalocean" {
-	token = "INSERT TOKEN HERE"
+	token = "TOKEN"
 }
 
 resource "digitalocean_droplet" "web" {
@@ -7,7 +7,7 @@ resource "digitalocean_droplet" "web" {
 	image = "debian-10-x64"
 	region = "nyc1"
 	size = "s-1vcpu-2gb"
-	ssh_keys = [INSERT SSH KEY HERE]
+	ssh_keys = [SSH_KEY]
 }
 
 output "ip" {
