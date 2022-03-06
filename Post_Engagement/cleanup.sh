@@ -1,5 +1,6 @@
 #!/bin/bash
 # Just a simple script to clean up and make life a little easier :D
+# I recommend executing with '> /dev/null' to ignore some errors when files don't play nice. 
 # Author: Parzival
 
 # Delete history
