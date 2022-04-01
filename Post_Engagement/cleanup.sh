@@ -11,14 +11,10 @@ echo "" ~/.zsh_history
 
 # Delete Metasploit l00ts
 echo "" > /root/.msf4/history
-rm -rf /root/.msf4/loot/*
-rm -rf /root/.msf4/logs/*
-rm -rf /root/.msf4/local/*
+rm -rf /root/.msf4/*
 
 echo "" > ~/.msf4/history
-rm -rf ~/.msf4/loot/*
-rm -rf ~/.msf4/logs/*
-rm -rf ~/.msf4/local/*
+rm -rf ~/.msf4/*
 
 # Delete John files
 rm -rf /root/.john/*
@@ -47,4 +43,4 @@ tmux kill-server
 pkill screen
 
 # Kill Metasploit Workspaces
-msfconsole -q -x 'workspace -D'
+msfconsole -q -x 'workspace -D' &
