@@ -1,10 +1,14 @@
 import argparse
 import requests
 from bs4 import BeautifulSoup
+import urllib3
+
+# Disable SSL warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def get_html_title(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, verify=False)
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
         title = soup.title.string.strip()
