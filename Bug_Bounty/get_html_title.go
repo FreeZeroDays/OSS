@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"crypto/tls"
 	"flag"
 	"fmt"
 	"log"
@@ -12,7 +13,13 @@ import (
 )
 
 func getHTMLTitle(url string) (string, error) {
-	resp, err := http.Get(url)
+	// Ignore SSL errors
+	tr := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
+	client := &http.Client{Transport: tr}
+
+	resp, err := client.Get(url)
 	if err != nil {
 		return "", err
 	}
