@@ -1,2 +1,2 @@
 @echo off
-cmd.exe
+cmd.exe /k "whoami"
