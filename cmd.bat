@@ -1,2 +1,9 @@
 @echo off
-cmd.exe /k "whoami"
+
+:loop
+
+set /p var=command: 
+
+%var%
+
+goto loop
